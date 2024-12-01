@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-track{
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #bf0603; 
+}
+nav ul li {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: font-size 0.5s ease;
+    font-family: "Poppins", serif;
+}
+nav ul li:hover{
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+/* /nav section styling */
+/* main carousal section */
+.carousel-inner{
+    height: 630px;
+    width: 100vw;
+}
+.carousel-inner img{
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+
+}
+/* /main carousal section */
+/* search movie section */
+.movie .mainimg{
+    width: 100%;
+    height: 100%;
+}
+.movie {
+    position: relative;
+    width: 100%;
+    height: fit-content; /* Adjust as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", serif;
+  }
+  
+  .mainimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9; /* Lower the opacity */
+    z-index: 1; /* Ensure it stays behind the content */
+  }
+  
+  .content {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    z-index: 2; /* Ensure content appears above the image */
+    color: whitesmoke; /* Text color for visibility */
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Optional for better readability */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+    
+    gap: 100px;
+  }
+.aboutmovie{
+    width: 550px;
+    margin-top: 200px;
+    /* border: 1px solid white; */
+}
+.aboutmovie p{
+    text-align: left;
+}
+.aboutmovie p span{
+    font-weight: 600;
+    font-size: 20px;
+}
+.aboutmovie .time{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.playmorebtn button{
+    height: 50px;
+    width: 150px;
+    background-color: rgba(211, 211, 211, 0.2);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.content .postermovie{
+    width: 400px;
+    height: 500px;
+}
+.content .postermovie img{
+    width: 100%;
+    height: 100%;
+}
+/* /search movie section */
+/* card section */
+.cardfilims{
+    background-color: black;
+}
+.cardhead{
+     border-bottom: 2px solid #bf0603; 
+    margin: 0px 5px;
+}
+.cardhead h1{  
+ color: #bf0603;
+ font-family: "Poppins", serif;
+ margin-left: 30px;
+ padding-top: 15px;
+ font-weight: 700;
+ font-size: 30px;
+}
+.cards{
+    border: 1px solid black;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding-top: 20px;
+    font-family: "Poppins", serif;
+    
+}
+.cards::-webkit-scrollbar{
+    width: 0px;
+}
+
+.cards .card{
+   min-height: fit-content;
+    min-width: 300px;
+    margin-right: 2px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin-left: 10px;
+}
+.cards  .card:hover{
+    
+    transform: scale(1.1);
+}
+.cards .card img{
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    
+}
+
+.cards .card .btn{
+    background-color: #bf0603;
+    color: white;
+    font-weight: 600;
+}
+/* card section */
